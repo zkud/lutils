@@ -27,11 +27,14 @@ def fill_dicts() -> typing.Tuple[dict, dict]:
                 vendors[vendor_root] = line[len(vendor_id) + 1:].strip()
             # if device
             elif re.match(r"[\t]([a-zA-Z0-9]+)", line):
-                device_id = re.match(r"[\t]([a-zA-Z0-9]+)", line).group(0).strip()
-                devices[vendor_root + '0x' + device_id] = line[len(device_id) + 2:].strip()
+                device_id = re.match(
+                    r"[\t]([a-zA-Z0-9]+)",
+                    line).group(0).strip()
+                devices[vendor_root + '0x' +
+                        device_id] = line[len(device_id) + 2:].strip()
 
     return vendors, devices
-                
+
 
 def main():
     output_list = [
@@ -54,7 +57,7 @@ def main():
             with open(PCI_PATH + device_path + '/vendor', "r") as vendor_file:
                 device_id = device_file.read().strip()
                 vendor_id = vendor_file.read().strip()
-                
+
                 device_name = ''
                 vendor_name = ''
                 try:
