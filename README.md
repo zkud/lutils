@@ -12,3 +12,8 @@ Usage: <br>
   <code>python setttl.py old</code> print ttl <br>
   <code>python setttl.py restore</code> set old ttl <br>
   <code>python setttl.py value:int</code> set ttl as value
+  
+## lshdd :fire:
+Prints the all hdd devices <br>
+First compile with <code>gcc -o lshdd lshdd.c </code>
+Second run with <code>./lshdd</code>
