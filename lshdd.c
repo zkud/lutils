@@ -12,6 +12,13 @@
 #define MAX_BUFFER_SIZE 255
 
 
+/*
+ * Used some code of
+ * Distrotech https://github.com/Distrotech.
+ * They are cool
+ */
+
+
 void print_header() {
     puts(
         "model | serial number | firmware | "
