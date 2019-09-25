@@ -15,5 +15,5 @@ Usage: <br>
   
 ## lshdd :fire:
 Prints the all hdd devices <br>
-First compile with <code>gcc -o lshdd lshdd.c </code> <br>
+First compile with <code>gcc -o lshdd lshdd.c</code> <br>
 Second run with <code>./lshdd</code>
