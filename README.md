@@ -17,3 +17,6 @@ Usage: <br>
 Prints the all hdd devices <br>
 First compile with <code>gcc -o lshdd lshdd.c</code> <br>
 Second run with <code>./lshdd</code>
+
+## resmon.py :fire:  
+Simple system resourses monitoring. Just run <code>python resmon.py</code>
